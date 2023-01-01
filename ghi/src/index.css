@@ -2,20 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
 * {
-  margin: 0;
   padding: 0;
-  background-color: black;
+  margin: 0;
+  box-sizing: border-box;
+  background: black;
 }
 
 html {
   scroll-behavior: smooth;
   color: white;
-  overflow-x: hidden;
+}
+
+.navbar {
+  text-decoration: none;
 }
 
 
-/* .grain-effect::before {
+#col-3 {
+  width: 25%;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 5%;
+  z-index: 8;
+  right: 0;
+  pointer-events: none;
+}
+
+nav a {
+  font-size: 13px;
+  line-height: 10px;
+  text-transform: uppercase;
+  letter-spacing: .1vw;
+  pointer-events: auto;
+  background-color: transparent;
+}
+
+.a {
+  text-decoration: none;
+
+  position: relative;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s ease-out;
+}
+
+.a:hover:before {
+  transform: scaleX(1);
+
+}
+
+.a:hover {
+  color: #4A4A4A;
+}
+
+.grain-effect::before {
   position: fixed;
   left: 0;
   top: 0;
@@ -29,43 +91,43 @@ html {
 
   0%,
   100% {
-      transform: translate(0, 0)
+    transform: translate(0, 0)
   }
 
   10% {
-      transform: translate(-5%, -10%)
+    transform: translate(-5%, -10%)
   }
 
   20% {
-      transform: translate(-15%, 5%)
+    transform: translate(-15%, 5%)
   }
 
   30% {
-      transform: translate(7%, -25%)
+    transform: translate(7%, -25%)
   }
 
   40% {
-      transform: translate(-5%, 25%)
+    transform: translate(-5%, 25%)
   }
 
   50% {
-      transform: translate(-15%, 10%)
+    transform: translate(-15%, 10%)
   }
 
   60% {
-      transform: translate(15%, 0%)
+    transform: translate(15%, 0%)
   }
 
   70% {
-      transform: translate(0%, 15%)
+    transform: translate(0%, 15%)
   }
 
   80% {
-      transform: translate(3%, 35%)
+    transform: translate(3%, 35%)
   }
 
   90% {
-      transform: translate(-10%, 10%)
+    transform: translate(-10%, 10%)
   }
 }
 
@@ -75,19 +137,44 @@ html {
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.1;
+  opacity: 0.2;
   position: fixed;
   top: -100%;
   width: 300%;
-} */
-
-/* Staff test, sans-serif; */
+}
 
 
 
-.main-1{
+.main-1 {
   height: 100vh;
 }
-.main-2{
+
+.main-2 {
   height: 100vh;
+}
+
+
+.rip {
+  background: url(/src/assets/Rip.svg);
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -110%;
+  height: 150px;
+  background-size: cover;
+  filter: grayscale(100%) brightness(100%) contrast(1000%);
+
+}
+.rip-two {
+  background: url(/src/assets/Rip.svg);
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transform: translate(0rem, -6ex);
+  height: 150px;
+  background-size: cover;
+  filter: grayscale(100%) brightness(100%) contrast(1000%);
+
 }

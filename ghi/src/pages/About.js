@@ -8,6 +8,7 @@ function About() {
                 
             </div>
             <HorizontalGallery />
+            <div className='rip-two' />
             <div className="w-screen h-screen" id='project-section'>
             
             </div>
