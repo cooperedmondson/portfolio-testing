@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { motion } from 'framer-motion';
 
 function HorizontalGallery() {
     gsap.registerPlugin(ScrollTrigger);
@@ -17,7 +18,7 @@ function HorizontalGallery() {
                 trigger: scroller.current,
                 markers: false,
                 pin: true,
-                pinSpacing: true,
+                
                 scrub: 1,
                 invalidateOnRefresh: true,
                 anticipatePin: 1,
@@ -31,6 +32,8 @@ function HorizontalGallery() {
             to.kill();
         };
     }, []);
+
+
     return (
         <div className="overflow-hidden flex">
             <div className="overflow-hidden ">
@@ -43,49 +46,67 @@ function HorizontalGallery() {
                         ref={skills}
                         className="skill-set px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
                     >
+                        <div className='left-wrapper-1'>
+                            <div className='left-content-1'>
+                                Purely
+                            </div>
+                        </div>
                         <img
                             src="https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="1st image"
                             layout="fill"
-                            objectFit="contain"
+                            objectfit="contain"
                             className="max-w-[70vw] max-h-[60vh] m-auto"
                         />
+                        <div className='right-wrapper-1'>
+                            <div className='right-content-1'>
+                                Puptonic / 2022
+                            </div>
+                        </div>
                     </div>
                     <div
                         ref={skills}
                         className="skill-set px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
                     >
+                        <div className='left-wrapper-2'>
+                            <div className='left-content-2'>
+                                Car
+                            </div>
+                        </div>
                         <img
                             src="https://images.pexels.com/photos/2902536/pexels-photo-2902536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="2ndimage"
                             layout="fill"
-                            objectFit="contain"
+                            objectfit="contain"
                             className="max-w-[70vw] max-h-[60vh] m-auto"
                         />
+                        <div className='right-wrapper-2'>
+                            <div className='right-content-2'>
+                                Car / 2022
+                            </div>
+                        </div>
                     </div>
                     <div
                         ref={skills}
                         className="skill-set px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
                     >
+                        <div className='left-wrapper'>
+                            <div className='left-content'>
+                                Stocks
+                            </div>
+                        </div>
                         <img
                             src="https://images.pexels.com/photos/1089194/pexels-photo-1089194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="2ndimage"
                             layout="fill"
-                            objectFit="contain"
+                            objectfit="contain"
                             className="max-w-[70vw] max-h-[60vh] m-auto"
                         />
-                    </div>
-                    <div
-                        ref={skills}
-                        className="skill-set px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
-                    >
-                        <img
-                            src="https://images.pexels.com/photos/1601775/pexels-photo-1601775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="2ndimage"
-                            layout="fill"
-                            objectFit="contain"
-                            className="max-w-[70vw] max-h-[60vh] m-auto"
-                        />
+                        <div className='right-wrapper'>
+                            <div className='right-content'>
+                                Api / 2022
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

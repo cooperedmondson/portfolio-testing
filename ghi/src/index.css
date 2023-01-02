@@ -1,8 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 
+@font-face {
+  font-family: Imported;
+  src: url("/src/font/ilyas.otf");
+}
 
+@font-face {
+  font-family: Import;
+  src: url("/src/font/Ghakity.otf");
+}
 
 
 
@@ -11,6 +20,7 @@
   margin: 0;
   box-sizing: border-box;
   background: black;
+  /* cursor: none; */
 }
 
 html {
@@ -147,11 +157,9 @@ nav a {
 
 .main-1 {
   height: 100vh;
+  overflow: hidden;
 }
 
-.main-2 {
-  height: 100vh;
-}
 
 
 .rip {
@@ -166,15 +174,250 @@ nav a {
   filter: grayscale(100%) brightness(100%) contrast(1000%);
 
 }
+
 .rip-two {
   background: url(/src/assets/Rip.svg);
   content: "";
   position: absolute;
   width: 100%;
   left: 0;
-  transform: translate(0rem, -6ex);
+  bottom: -355%;
+  transform: translate(0rem, -9ex);
   height: 150px;
   background-size: cover;
   filter: grayscale(100%) brightness(100%) contrast(1000%);
 
+}
+
+/* 
+.cursor{
+  background-color: white;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+} */
+
+.about-wrapper {
+  height: 100vw;
+  width: 100vw;
+}
+
+.project-wrapper {
+  height: 100vw;
+  width: 100vw;
+}
+
+.left-wrapper {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 70px;
+  bottom: 267px;
+  background-color: transparent;
+  line-height: .8;
+}
+
+
+.right-wrapper {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 40px;
+  top: 308px;
+  background-color: transparent;
+  line-height: .8;
+}
+
+.right-content {
+  color: black;
+  background-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Imported;
+  font-size: 4vw;
+  letter-spacing: 0.4vw;
+}
+
+.left-content {
+  color: black;
+  background-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Imported;
+  font-size: 4vw;
+  letter-spacing: 0.4vw;
+}
+
+/* First one */
+
+.left-wrapper-1 {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 70px;
+  bottom: 265px;
+  background-color: transparent;
+  line-height: .8;
+}
+
+
+.right-wrapper-1 {
+  transform: rotate(90deg);
+  position: absolute;
+  right: -30px;
+  top: 380px;
+  background-color: transparent;
+  line-height: .8;
+}
+
+.right-content-1 {
+  color: black;
+  background-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Imported;
+  font-size: 4vw;
+  letter-spacing: 0.4vw;
+}
+
+.left-content-1 {
+  color: black;
+  background-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Imported;
+  font-size: 4vw;
+  letter-spacing: 0.4vw;
+}
+
+/* Second one */
+
+.left-wrapper-2 {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 110px;
+  bottom: 227px;
+  background-color: transparent;
+  line-height: .8;
+}
+
+
+.right-wrapper-2 {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 30px;
+  top: 307px;
+  background-color: transparent;
+  line-height: .8;
+}
+
+.right-content-2 {
+  color: black;
+  background-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Imported;
+  font-size: 4vw;
+  letter-spacing: 0.4vw;
+}
+
+.left-content-2 {
+  color: black;
+  background-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Imported;
+  font-size: 4vw;
+  letter-spacing: 0.4vw;
+}
+
+
+.introduction-wrapper {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+
+}
+
+.introduction-content {
+  background-color: transparent;
+
+}
+
+.introduction {
+  background-color: transparent;
+  width: 100%;
+
+
+}
+
+.introduction-span-one {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 11vw;
+  background-color: transparent;
+  font-family: Import;
+  letter-spacing: -0.3vw;
+  top: -50%;
+  right: 0;
+  position: absolute;
+  padding-right: 30px;
+}
+
+.introduction-span-two {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 11vw;
+  background-color: transparent;
+  font-family: Import;
+  letter-spacing: 0.3vw;
+  padding-left: 30px;
+}
+
+.summary-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.scroll-wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 17%;
+  right: 45%;
+  background-color: red;
+}
+
+.scroll-content {
+  -webkit-line-break: after-white-space;
+  white-space: pre-wrap;
+  background: rgba(255, 255, 255, 0);
+  column-count: auto !important;
+  column-gap: 16px !important;
+  zoom: 1.134;
+  transform: scale(0.881836);
+  width: 113.4%;
+  height: 113.4%;
+  background-color: transparent;
+}
+
+.scroll-text {
+  font-family: 'Amarante', cursive;
+  text-transform: lowercase !important;
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+
+.center-this {
+  line-height: 11px;
+  white-space: inherit;
+  text-align: center;
+  background-color: transparent;
+}
+
+.center-this span{
+  background-color: transparent;
 }

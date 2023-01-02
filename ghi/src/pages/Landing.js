@@ -1,29 +1,56 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Rip from '../assets/Rip.svg';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { motion } from 'framer-motion';
+import Mouse from '../assets/Mouse.png'
 
-function Landing() {
+
+function Landing(props) {
+  gsap.registerPlugin(ScrollTrigger);
+
+
   return (
     <div className="main-1">
+      <div className='grain-effect' />
 
-      <div className='grain-effect'/>
 
-      <nav className=' bg-transparent text-white uppercase font-semibold' id='col-3'>
-        <div className='bg-transparent'>
-          <a className="a" href='#about' id='animate'>About</a>
-          <br />
-          <a className="a" href='#projects' id='animate'>Projects</a>
+      <div className='menu-wrapper'>
+        <div className=''>
+
         </div>
-        <div className='bg-transparent'>
-          <a id='animate' className="a" href='https://github.com/cooperedmondson'>Github</a>
-          <br />
-          <a id='animate' className="a" href='#contact'>Contact</a>
-        </div>
-      </nav>
-      <div className='rip'/>
-        
-      
+      </div>
 
+
+      <div className='introduction-wrapper'>
+        <div className='introduction-content'>
+          <div className='introduction'>
+            <div className='introduction-span-one'>Cooper</div>
+            <span className='introduction-span-two'>Edmondson</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div className='scroll-wrapper' onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+        <div className='scroll-content'>
+          <p className='center-this'>
+            <span>⍝</span>
+            <span>⍝</span>
+          </p>
+          <span className='scroll-text'>  [ SCROLL DOWN ]</span>
+        </div>
+      </div>
+
+
+      <div className='lighthouse-wrapper'>
+        <div className='lighthouse-content'>
+          
+        </div>
+      </div>
+
+      <div className='rip' />
     </div>
+
   )
 }
 
