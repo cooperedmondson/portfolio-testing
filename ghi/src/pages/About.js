@@ -80,6 +80,13 @@ function About(props) {
             </div>
 
 
+
+            <div className='project-introduction-wrapper'>
+                <div className='project-introduction-content'>
+
+                </div>
+            </div>
+
         </div>
     )
 }

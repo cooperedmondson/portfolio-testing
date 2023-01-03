@@ -70,12 +70,14 @@ function App() {
 
   return (
     <>
-      <Landing textEnter={textEnter} textLeave={textLeave}  />
-      <About mouseEnter={mouseEnter} mouseExit={mouseExit}/>
+      <div className='grain-effect' />
+      <Landing textEnter={textEnter} textLeave={textLeave} />
+      <About mouseEnter={mouseEnter} mouseExit={mouseExit} />
       <div>
-        <HorizontalGallery/>
+        <div className='rip' />
+        <HorizontalGallery />
       </div>
-      <Footer/>
+      <Footer />
       <motion.div className='cursor'
         style={cursorStyle}
         variants={variants}
