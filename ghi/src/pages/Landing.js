@@ -31,13 +31,13 @@ function Landing(props) {
       </div>
 
 
-      <div className='scroll-wrapper' onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+      <div className='scroll-wrapper' >
         <div className='scroll-content'>
           <p className='center-this'>
             <span>⍝</span>
             <span>⍝</span>
           </p>
-          <span className='scroll-text'>  [ SCROLL DOWN ]</span>
+          <span className='scroll-text'onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>  [ SCROLL DOWN ]</span>
         </div>
       </div>
 
@@ -48,7 +48,6 @@ function Landing(props) {
         </div>
       </div>
 
-      <div className='rip' />
     </div>
 
   )

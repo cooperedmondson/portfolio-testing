@@ -5,7 +5,8 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { motion } from 'framer-motion';
 import Landing from './pages/Landing';
 import About from './pages/About';
-
+import HorizontalGallery from './components/HorizontalGallery';
+import Footer from './pages/Footer';
 function App() {
 
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -71,6 +72,10 @@ function App() {
     <>
       <Landing textEnter={textEnter} textLeave={textLeave}  />
       <About mouseEnter={mouseEnter} mouseExit={mouseExit}/>
+      <div>
+        <HorizontalGallery/>
+      </div>
+      <Footer/>
       <motion.div className='cursor'
         style={cursorStyle}
         variants={variants}

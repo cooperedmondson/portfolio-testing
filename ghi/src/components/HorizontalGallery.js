@@ -36,6 +36,8 @@ function HorizontalGallery() {
 
     return (
         <div className="overflow-hidden flex">
+                  <div className='rip' />
+
             <div className="overflow-hidden ">
                 <div
                     id="skills"
@@ -110,6 +112,8 @@ function HorizontalGallery() {
                     </div>
                 </div>
             </div>
+            <div className='rip-two' />
+
         </div>
     )
 }
