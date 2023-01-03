@@ -481,4 +481,40 @@ html {
 }
 
 
+.about-wrapper-two{
+  padding-top: 200px;
+  background-color: transparent;
+}
 
+
+.about-content-two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-title{
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  height: 50%;
+}
+
+
+.background-h1{
+  background-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Imported;
+  font-size: 4vw;
+  letter-spacing: 0.4vw;
+}
+
+.background-h1-2{
+  background-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Imported;
+  font-size: 4vw;
+  letter-spacing: 0.4vw;
+}

@@ -62,23 +62,23 @@ function About(props) {
 
 
     useEffect(() => {
-        
+
         const image = document.querySelector(".ghost");
         const revealContainer = document.querySelector(".reveal");
 
-        
+
         gsap.set(".reveal", { autoAlpha: 1 });
         gsap.from(".reveal", {
-            xPercent: -100,
+            xPercent: 100,
             ease: "power2.out",
             scrollTrigger: {
-              trigger: revealContainer,
-              toggleActions: "restart none none reset",
-              scrub: 1,
+                trigger: revealContainer,
+                toggleActions: "restart none none reset",
+                scrub: 1,
             },
-          }, 1.5);
+        }, 1.5);
         gsap.from(".ghost", {
-            xPercent: 100,
+            xPercent: -100,
             scale: 1.3,
             delay: -1.5,
             ease: "power2.out",
@@ -97,7 +97,7 @@ function About(props) {
     return (
         <div className="main-two">
 
-            <div className='flex items-center'>
+            <div className='flex items-center justify-between'>
                 <div className='about-wrapper'>
                     <div className='about-content'>
                         <div className='about-title'>
@@ -122,7 +122,44 @@ function About(props) {
                 </div>
             </div>
 
+            <div className='about-wrapper-two'>
 
+                <div className='about-content-two'>
+                    <div className='background-title'>
+                        <h1 className='background-h1'>My</h1>
+                        <br />
+                        <h1 className='background-h1-2' >Background</h1>
+                    </div>
+                </div>
+                <div className='about-content-three'>
+                    <div className='image-wrap'>
+                        <div className='image-content'>
+                            <img alt='' className='image' />
+                        </div>
+                        <div className='biography-wrap'>
+                            <div className='biography-content'>
+                                <div className='bio'> </div>
+                            </div>
+                        </div>
+                        <div className='image-content'>
+                            <img alt='' className='image' />
+                        </div>
+                        <div className='biography-wrap'>
+                            <div className='biography-content'>
+                                <div className='bio'> </div>
+                            </div>
+                        </div>
+                        <div className='image-content'>
+                            <img alt='' className='image' />
+                        </div>
+                        <div className='biography-wrap'>
+                            <div className='biography-content'>
+                                <div className='bio'> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
