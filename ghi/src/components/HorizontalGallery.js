@@ -18,12 +18,10 @@ function HorizontalGallery() {
                 trigger: scroller.current,
                 markers: false,
                 pin: true,
-                
                 scrub: 1,
                 invalidateOnRefresh: true,
                 anticipatePin: 1,
                 snap: 1 / (skillSet.length - 1),
-
                 end: () => '+=' + window.innerWidth,
             },
         });

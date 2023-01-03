@@ -20,7 +20,6 @@
   margin: 0;
   box-sizing: border-box;
   background: black;
-  /* cursor: none; */
 }
 
 html {
@@ -28,64 +27,7 @@ html {
   color: white;
 }
 
-.navbar {
-  text-decoration: none;
-}
 
-
-#col-3 {
-  width: 25%;
-}
-
-nav {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 50px 5%;
-  z-index: 8;
-  right: 0;
-  pointer-events: none;
-}
-
-nav a {
-  font-size: 13px;
-  line-height: 10px;
-  text-transform: uppercase;
-  letter-spacing: .1vw;
-  pointer-events: auto;
-  background-color: transparent;
-}
-
-.a {
-  text-decoration: none;
-
-  position: relative;
-  background-color: transparent;
-  opacity: 1;
-}
-
-.a:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: white;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.45s ease-out;
-}
-
-.a:hover:before {
-  transform: scaleX(1);
-
-}
-
-.a:hover {
-  color: #4A4A4A;
-}
 
 .grain-effect::before {
   position: fixed;
@@ -174,6 +116,7 @@ nav a {
   filter: grayscale(100%) brightness(100%) contrast(1000%);
 
 }
+
 .rip-two {
   background: url(/src/assets/Rip.svg);
   content: "";
@@ -189,13 +132,13 @@ nav a {
 
 
 
-.cursor{
+.cursor {
   pointer-events: none;
 }
 
 .about-wrapper {
   height: 100vw;
-  width: 100vw;
+  width: 100%;
 }
 
 .project-wrapper {
@@ -382,7 +325,7 @@ nav a {
   top: 20%;
   left: 45%;
   background-color: transparent;
-  
+
 }
 
 .scroll-content {
@@ -412,36 +355,36 @@ nav a {
   background-color: transparent;
 }
 
-.center-this span{
+.center-this span {
   background-color: transparent;
 }
 
-.main-two{
+.main-two {
   width: 100%;
   height: 200vh;
   background-color: transparent;
 }
 
-.main-three{
+.main-three {
   width: 100%;
   height: 100vh;
   background-color: black;
 }
 
 
-.about-wrapper{
+.about-wrapper {
   position: absolute;
   top: 100%;
   background-color: transparent;
 }
 
-.about-content{
+.about-content {
   background-color: transparent;
   width: 700px;
   height: 400px;
 }
 
-.about-title{
+.about-title {
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -449,7 +392,7 @@ nav a {
   height: 50%;
 }
 
-.title-1{
+.title-1 {
   background-color: transparent;
   font-weight: 300;
   font-size: 8vw;
@@ -462,7 +405,8 @@ nav a {
   padding-left: 30px;
   display: flex;
 }
-.title-2{
+
+.title-2 {
   background-color: transparent;
   font-weight: 300;
   font-size: 2vw;
@@ -474,7 +418,8 @@ nav a {
   top: -10px;
   display: flex;
 }
-.title-3{
+
+.title-3 {
   background-color: transparent;
   font-weight: 200;
   font-size: 8vw;
@@ -487,7 +432,7 @@ nav a {
   display: flex;
 }
 
-.about-paragraph{
+.about-paragraph {
   padding-top: 35px;
   background-color: transparent;
   width: 600px;
@@ -498,30 +443,42 @@ nav a {
   letter-spacing: .1vw;
 }
 
-.char{
+.char {
   background-color: transparent;
 }
-.char2{
+
+.char2 {
   background-color: transparent;
 }
-.char3{
+
+.char3 {
   background-color: transparent;
 }
 
 
-/* .lighthouse-wrapper{
-  position: absolute;
-  background-color: transparent;
-  top: -30%;
-  right: -12%;
-  scale: 2;
-  overflow:
-}
-
-.lighthouse-content{
+.ghost-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
   background-color: transparent;
 }
 
-.lighthouse{
+.ghost{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform-origin: right;
   background-color: transparent;
-} */
+}
+.reveal{
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+
+
