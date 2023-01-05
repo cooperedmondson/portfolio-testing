@@ -15,7 +15,7 @@ function App() {
     x: 0,
     y: 0,
   });
-  console.log(mousePosition);
+  
 
   useEffect(() => {
     const mouseMove = e => {
@@ -77,7 +77,7 @@ function App() {
         <div className='rip' />
         <HorizontalGallery />
       </div>
-      <Footer />
+      <Footer textEnter={textEnter} textLeave={textLeave}/>
       <motion.div className='cursor'
         style={cursorStyle}
         variants={variants}

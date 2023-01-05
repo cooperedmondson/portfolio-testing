@@ -123,7 +123,7 @@ html {
   position: relative;
   width: 100%;
   left: 0;
-  bottom: 60px;
+  bottom: 50px;
   height: 150px;
   background-size: cover;
   filter: grayscale(100%) brightness(100%) contrast(1000%);
@@ -143,7 +143,7 @@ html {
 
 .project-wrapper {
   height: 100vw;
-  width: 100vw;
+  width: 100%;
 }
 
 .left-wrapper {
@@ -361,14 +361,14 @@ html {
 
 .main-two {
   width: 100%;
-  height: 200vh;
+  height: 100vh;
   background-color: transparent;
 }
 
 .main-three {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: transparent;
 }
 
 
@@ -454,6 +454,18 @@ html {
 .char3 {
   background-color: transparent;
 }
+.char4 {
+  background-color: transparent;
+}
+.char5 {
+  background-color: transparent;
+}
+.char6 {
+  background-color: transparent;
+}
+.char7 {
+  background-color: transparent;
+}
 
 
 .ghost-container{
@@ -463,13 +475,14 @@ html {
   position: relative;
   width: 100%;
   background-color: transparent;
+  padding-right: 30px;
 }
 
 .ghost{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transform-origin: right;
+  transform-origin: left;
   background-color: transparent;
 }
 .reveal{
@@ -517,4 +530,220 @@ html {
   font-family: Imported;
   font-size: 4vw;
   letter-spacing: 0.4vw;
+}
+
+
+.featured-projects{
+  position: absolute;
+  bottom: -100%;
+  right: 0;
+  padding-right: 30px;
+  background-color: transparent;
+}
+.featured-container{
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  height: 50%;
+}
+
+.featured-text{
+  background-color: transparent;
+  font-weight: 300;
+  font-size: 8vw;
+  letter-spacing: 0vw;
+  font-family: Imported;
+  position: relative;
+  text-transform: uppercase;
+  top: -30px;
+  left: 0;
+  padding-left: 30px;
+  display: flex;
+}
+
+.featured-text2{
+  background-color: transparent;
+  font-weight: 300;
+  font-size: 8vw;
+  letter-spacing: 0vw;
+  font-family: Imported;
+  position: relative;
+  text-transform: uppercase;
+  top: 60px;
+  left: 0;
+  padding-left: 30px;
+  display: flex;
+}
+
+
+.contact-wrapper{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:300px;
+}
+
+.contact-content{
+  position: relative;
+  bottom: 130px;
+  display: flex;
+  gap: 2%;
+  width: 100%;
+  justify-content: center;
+  background-color: transparent;
+  
+}
+
+.contact-subtext{
+  font-family: 'Amarante', cursive;
+  text-transform: lowercase !important;
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+
+.contact-title{
+  display: flex;
+  flex-wrap: flex-end;
+  font-family: Imported;
+  font-size: 8vw;
+  font-weight: normal;
+  background-color: transparent;
+}
+
+.me-wrapper{
+  padding-top: 100px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  position: relative;
+  background-color: transparent;
+}
+
+.me-content{
+  font-size: 7.5vw;
+  line-height: 6.9vw;
+  text-align: right;
+  font-family: Imported;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: transparent;
+  display: flex;
+  gap: 50px;
+}
+
+.hello1{
+  background-color: transparent;
+  display: flex;
+}
+.hello2{
+  background-color: transparent;
+  display: flex;
+}
+
+.line-arrow{
+  position: absolute;
+  right: 20%;
+  background-color: transparent;
+}
+
+.arrow{
+  background-color: transparent;
+  position: relative;
+  bottom: 103px;
+  left: -23px;
+}
+
+.divider{
+  height: .5px;
+  width: 100%;
+  border: 1px solid white;
+  right: 0;
+  background-color: transparent;
+  position: relative;
+  bottom: -400px;
+}
+
+.locations-wrapper{
+  position: relative;
+  bottom: -28.7%;
+  width: 100%;
+  height: 200px;
+  background-color: transparent;
+}
+
+.locations-content{
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+  padding-top: 200px;
+}
+
+
+.animate1 {
+  background-color: transparent;
+  width: 300px;
+  padding-left: 30px;
+  font-family: Import;
+  text-transform: uppercase;
+  font-size: 2vw;
+  letter-spacing: .2vw;
+  /* opacity: 0; */
+}
+
+.animate1:before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 80px;
+    right: 0;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.45s ease-out;
+}
+
+.animate1:hover:before {
+    transform: scaleX(0.09);
+    
+}
+
+.animate1:hover {
+    color: #4A4A4A;
+}
+
+.animate2{
+  background-color: transparent;
+  width: 300px;
+  padding-left: 30px;
+  font-family: Import;
+  text-transform: uppercase;
+  font-size: 2vw;
+  letter-spacing: .2vw;
+}
+.animate2:before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 381px;
+    right: 0;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.45s ease-out;
+}
+
+.animate2:hover:before {
+    transform: scaleX(0.069);
+    
+}
+
+.animate2:hover {
+    color: #4A4A4A;
 }
