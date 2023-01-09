@@ -2,8 +2,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { motion } from 'framer-motion';
-import Stonk from "../assets/STONK.gif"
-import TAXIDRIVER from "../assets/TAXIDRIVER.gif"
+import Stonk from "../assets/STONK.gif";
+import TAXIDRIVER from "../assets/TAXIDRIVER.gif";
+import RUFF from "../assets/RUFF.GIF";
+
 function HorizontalGallery() {
     gsap.registerPlugin(ScrollTrigger);
     const scroller = useRef();
@@ -52,7 +54,8 @@ function HorizontalGallery() {
                             </div>
                         </div>
                         <img
-                            src="https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            id="ruff"
+                            src={RUFF}
                             alt="1st image"
                             layout="fill"
                             objectfit="contain"
