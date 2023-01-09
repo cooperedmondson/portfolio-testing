@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { motion } from 'framer-motion';
 import Mouse from '../assets/Mouse.png'
-import Lighthouse from '../assets/Lighthouse.png'
+import Lighthouse from '../assets/Donnie.gif'
 
 function Landing(props) {
   gsap.registerPlugin(ScrollTrigger);
@@ -41,11 +41,11 @@ function Landing(props) {
       </div>
 
 
-      {/* <div className='lighthouse-wrapper'>
+      <div className='lighthouse-wrapper'>
         <div className='lighthouse-content'>
           <img src={Lighthouse} className="lighthouse"/>
         </div>
-      </div> */}
+      </div>
 
     </div>
 

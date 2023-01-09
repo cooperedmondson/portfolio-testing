@@ -120,10 +120,9 @@ html {
 .rip-two {
   background: url(/src/assets/Rip.svg);
   content: "";
-  position: relative;
   width: 100%;
-  left: 0;
-  bottom: 50px;
+  position: relative;
+  top: -50px;
   height: 150px;
   background-size: cover;
   filter: grayscale(100%) brightness(100%) contrast(1000%);
@@ -136,10 +135,7 @@ html {
   pointer-events: none;
 }
 
-.about-wrapper {
-  height: 100vw;
-  width: 100%;
-}
+
 
 .project-wrapper {
   height: 100vw;
@@ -374,7 +370,7 @@ html {
 
 .about-wrapper {
   position: absolute;
-  top: 100%;
+  top: 130%;
   background-color: transparent;
 }
 
@@ -468,6 +464,11 @@ html {
 }
 
 
+
+
+
+
+
 .ghost-container{
   display: flex;
   flex-direction: column;
@@ -492,6 +493,11 @@ html {
   overflow: hidden;
   background-color: transparent;
 }
+
+
+
+
+
 
 
 .about-wrapper-two{
@@ -613,7 +619,7 @@ html {
 }
 
 .me-wrapper{
-  padding-top: 100px;
+  padding-top:300px;
   display: flex;
   justify-content: flex-end;
   padding-right: 40px;
@@ -651,8 +657,9 @@ html {
 .arrow{
   background-color: transparent;
   position: relative;
-  bottom: 103px;
-  left: -23px;
+  bottom: 107px;
+  left: -23px; 
+  
 }
 
 .divider{
@@ -662,7 +669,7 @@ html {
   right: 0;
   background-color: transparent;
   position: relative;
-  bottom: -400px;
+  bottom: -300px;
 }
 
 .locations-wrapper{
@@ -680,7 +687,8 @@ html {
   padding-left: 50px;
   padding-right: 50px;
   align-items: center;
-  padding-top: 200px;
+  padding-top: 100px;
+  padding-bottom:100px;
 }
 
 
@@ -698,7 +706,7 @@ html {
 .animate1:before {
     content: "";
     position: absolute;
-    bottom: -50px;
+    top: 150px;
     left: 80px;
     right: 0;
     height: 2px;
@@ -729,7 +737,7 @@ html {
 .animate2:before {
     content: "";
     position: absolute;
-    bottom: -50px;
+    top: 150px;
     left: 381px;
     right: 0;
     height: 2px;
@@ -746,4 +754,28 @@ html {
 
 .animate2:hover {
     color: #4A4A4A;
+}
+
+.lighthouse{
+  background-color: transparent;
+}
+.lighthouse:hover{
+  background-color: transparent;
+}
+
+.lighthouse-wrapper{
+  position: absolute;
+  top: -13%;
+  background-color: transparent;
+}
+
+.lighthouse-content{
+  background-color: transparent;
+}
+
+#STONK{
+  background-color: transparent;
+}
+#taxi{
+  background-color: transparent;
 }

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import JOBI from '../assets/JOBI.gif'
+import Donnie from '../assets/Donnie.gif'
 
 function About(props) {
 
@@ -91,44 +91,44 @@ function About(props) {
     }, []);
 
 
-    const imageRef = useRef(null);
-    const imageContainerRef = useRef(null);
+    // const imageRef = useRef(null);
+    // const imageContainerRef = useRef(null);
 
 
 
-    useEffect(() => {
-        setTimeout(() => {
-            if (imageRef && imageContainerRef) {
-                const image = document.querySelector(".ghost");
-                const revealContainer = imageContainerRef.current;
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         if (imageRef && imageContainerRef) {
+    //             const image = document.querySelector(".ghost");
+    //             const revealContainer = imageContainerRef.current;
 
 
-                gsap.set(".reveal", { autoAlpha: 1 });
-                gsap.from(".reveal", 1.5, {
-                    xPercent: -100,
-                    ease: "power2.out",
-                    scrollTrigger: {
-                        trigger: ".ghost-container",
-                        toggleActions: "restart none none reset",
-                        scrub: 0.5,
-                        markers: false,
-                    },
-                });
-                gsap.from(".ghost", 1.5, {
-                    xPercent: 100,
-                    scale: 1.3,
-                    delay: -1.5,
-                    ease: "power2.out",
-                    scrollTrigger: {
-                        trigger: ".ghost-container",
-                        toggleActions: "restart none none reset",
-                        scrub: 0.5,
-                        markers: false,
-                    },
-                });
-            }
-        }, 500);
-    }, []);
+    //             gsap.set(".reveal", { autoAlpha: 1 });
+    //             gsap.from(".reveal", 1.5, {
+    //                 xPercent: -100,
+    //                 ease: "power2.out",
+    //                 scrollTrigger: {
+    //                     trigger: ".ghost-container",
+    //                     toggleActions: "restart none none reset",
+    //                     scrub: 0.5,
+    //                     markers: false,
+    //                 },
+    //             });
+    //             gsap.from(".ghost", 1.5, {
+    //                 xPercent: 100,
+    //                 scale: 1.3,
+    //                 delay: -1.5,
+    //                 ease: "power2.out",
+    //                 scrollTrigger: {
+    //                     trigger: ".ghost-container",
+    //                     toggleActions: "restart none none reset",
+    //                     scrub: 0.5,
+    //                     markers: false,
+    //                 },
+    //             });
+    //         }
+    //     }, 500);
+    // }, []);
 
 
 
@@ -155,11 +155,6 @@ function About(props) {
                     </div>
                 </div>
 
-            </div>
-            <div className='ghost-container'>
-                <div className='reveal' ref={imageContainerRef}>
-                    <img src={JOBI} className="ghost" ref={imageRef} />
-                </div>
             </div>
 
 
