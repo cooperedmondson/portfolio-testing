@@ -73,10 +73,6 @@ function App() {
       <div className='grain-effect' />
       <Landing textEnter={textEnter} textLeave={textLeave} />
       <About mouseEnter={mouseEnter} mouseExit={mouseExit} />
-      <div>
-        <div className='rip' />
-        <HorizontalGallery />
-      </div>
       <Footer textEnter={textEnter} textLeave={textLeave}/>
       <motion.div className='cursor'
         style={cursorStyle}

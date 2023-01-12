@@ -145,7 +145,7 @@ html {
 .left-wrapper {
   transform: rotate(-90deg);
   position: absolute;
-  left: 15%;
+  left: 20%;
   bottom: 28.4%;
   background-color: transparent;
   line-height: .8;
@@ -155,7 +155,7 @@ html {
 .right-wrapper {
   transform: rotate(90deg);
   position: absolute;
-  right: 12%;
+  right: 18%;
   bottom: 60.7%;
   background-color: transparent;
   line-height: .8;
@@ -186,8 +186,8 @@ html {
 .left-wrapper-1 {
   transform: rotate(-90deg);
   position: relative;
-  left: 4.7%;
-  bottom: -18.6%;
+  left: 10.7%;
+  bottom: -10.6%;
   background-color: transparent;
   line-height: .8;
 }
@@ -196,7 +196,7 @@ html {
 .right-wrapper-1 {
   transform: rotate(90deg);
   position: relative;
-  right: 13.6%;
+  right: 18%;
   bottom: 3.4%;
   background-color: transparent;
   line-height: .8;
@@ -355,9 +355,8 @@ html {
   background-color: transparent;
 }
 
-.main-two {
+#main-two {
   width: 100%;
-  height: 100vh;
   background-color: transparent;
 }
 
@@ -540,9 +539,8 @@ html {
 
 
 .featured-projects{
-  position: absolute;
-  bottom: -100%;
-  right: 0;
+  position: relative;
+  left: 39%;
   padding-right: 30px;
   background-color: transparent;
 }
@@ -674,9 +672,9 @@ html {
 
 .locations-wrapper{
   position: relative;
-  bottom: -28.7%;
+  bottom: -42.7%;
   width: 100%;
-  height: 200px;
+  height: 100px;
   background-color: transparent;
 }
 
@@ -687,8 +685,6 @@ html {
   padding-left: 50px;
   padding-right: 50px;
   align-items: center;
-  padding-top: 100px;
-  padding-bottom:100px;
 }
 
 
