@@ -702,7 +702,7 @@ html {
 .animate1:before {
     content: "";
     position: absolute;
-    top: 150px;
+    top: 40px;
     left: 80px;
     right: 0;
     height: 2px;
@@ -733,7 +733,7 @@ html {
 .animate2:before {
     content: "";
     position: absolute;
-    top: 150px;
+    top: 40px;
     left: 381px;
     right: 0;
     height: 2px;

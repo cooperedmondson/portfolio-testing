@@ -120,7 +120,7 @@ function About({mouseEnter, mouseLeave}) {
                         <h1 className='featured-text'>Featured</h1>
                     </div>
                 </div>
-            <div className='' onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+            <div className='' >
                 <div className='rip' />
                 <HorizontalGallery />
             </div>
