@@ -58,13 +58,13 @@ function App() {
   const textLeave = () => setCursorVariant("default");
   const [cursorStyle, setCursorStyle] = useState(style);
 
-  const mouseEnter = () => setCursorStyle({
-    ...cursorStyle,
-    backgroundColor: "black"
-  })
   const mouseExit = () => setCursorStyle({
     ...cursorStyle,
     backgroundColor: "white"
+  })
+  const mouseEnter = () => setCursorStyle({
+    ...cursorStyle,
+    backgroundColor: "black"
   })
 
 
