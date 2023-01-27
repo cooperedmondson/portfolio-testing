@@ -42,6 +42,11 @@ function App() {
       width: 60,
       x: mousePosition.x - 30,
       y: mousePosition.y - 30,
+    },
+    section: {
+      backgroundColor: "black",
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16,
     }
   }
   const style = {
@@ -56,23 +61,16 @@ function App() {
 
   const textEnter = () => setCursorVariant("text");
   const textLeave = () => setCursorVariant("default");
-  const [cursorStyle, setCursorStyle] = useState(style);
+  const sectionLeave = () => setCursorVariant("section");
 
-  const mouseExit = () => setCursorStyle({
-    ...cursorStyle,
-    backgroundColor: "white"
-  })
-  const mouseEnter = () => setCursorStyle({
-    ...cursorStyle,
-    backgroundColor: "black"
-  })
+  const [cursorStyle, setCursorStyle] = useState(style);
 
 
   return (
     <>
       <div className='grain-effect' />
       <Landing textEnter={textEnter} textLeave={textLeave} />
-      <About mouseEnter={mouseEnter} mouseExit={mouseExit} />
+      <About sectionLeave={sectionLeave} textLeave={textLeave} />
       <Footer textEnter={textEnter} textLeave={textLeave}/>
       <motion.div className='cursor'
         style={cursorStyle}

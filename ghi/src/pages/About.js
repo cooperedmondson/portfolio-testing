@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Donnie from '../assets/Donnie.gif'
 import HorizontalGallery from '../components/HorizontalGallery';
-function About({mouseEnter, mouseLeave}) {
+function About({sectionLeave, textLeave}) {
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -120,7 +120,7 @@ function About({mouseEnter, mouseLeave}) {
                         <h1 className='featured-text'>Featured</h1>
                     </div>
                 </div>
-            <div className='' >
+            <div onMouseEnter={sectionLeave} onMouseLeave={textLeave}>
                 <div className='rip' />
                 <HorizontalGallery />
             </div>
