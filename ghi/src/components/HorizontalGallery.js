@@ -44,7 +44,7 @@ function HorizontalGallery() {
                     ref={scroller}
                     className=" flex overflow-x-hidden text-white w-[400vw] m-0 bg-white  relative h-screen"
                 >
-                    <div
+                    <a href="https://github.com/cooperedmondson/Puppin"
                         ref={skills}
                         className="skill-set px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
                     >
@@ -66,8 +66,8 @@ function HorizontalGallery() {
                                 Puptonic / 2022
                             </div>
                         </div>
-                    </div>
-                    <div
+                    </a>
+                    <a href = "https://github.com/cooperedmondson/CarCar"
                         ref={skills}
                         className="skill-set px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
                     >
@@ -89,8 +89,8 @@ function HorizontalGallery() {
                                 Car / 2022
                             </div>
                         </div>
-                    </div>
-                    <div
+                    </a>
+                    <a href="https://github.com/cooperedmondson/stonks_api"
                         ref={skills}
                         className="skill-set px-12 w-screen h-full bg-transparent ns-horizontal-section__item flex items-center z-50"
                     >
@@ -112,7 +112,7 @@ function HorizontalGallery() {
                                 Api / 2022
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
