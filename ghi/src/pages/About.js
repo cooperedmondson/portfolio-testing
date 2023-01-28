@@ -2,8 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Donnie from '../assets/Donnie.gif'
+import Axe from '../assets/Axe.gif'
 import HorizontalGallery from '../components/HorizontalGallery';
-function About({sectionLeave, textLeave}) {
+function About({ sectionLeave, textLeave }) {
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -111,15 +112,17 @@ function About({sectionLeave, textLeave}) {
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div className='axe-container'>
+                    <img className="axe" src={Axe} />
                 </div>
             </div>
             <div className='featured-projects'>
-                    <div className='featured-container'>
-                        <h1 className='featured-text2'>Projects</h1>
-                        <h1 className='featured-text'>Featured</h1>
-                    </div>
+                <div className='featured-container'>
+                    <h1 className='featured-text2'>Projects</h1>
+                    <h1 className='featured-text'>Featured</h1>
                 </div>
+            </div>
             <div onMouseEnter={sectionLeave} onMouseLeave={textLeave}>
                 <div className='rip' />
                 <HorizontalGallery />

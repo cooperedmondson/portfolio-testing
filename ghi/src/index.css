@@ -655,7 +655,7 @@ html {
 .arrow{
   background-color: transparent;
   position: relative;
-  bottom: 107px;
+  bottom: 112px;
   left: -23px; 
   
 }
@@ -777,5 +777,16 @@ html {
 }
 
 #ruff{
+  background-color: transparent;
+}
+.axe-container{
+  position: relative;
+  right: -65%;
+  top: 200px;
+  background-color: transparent;
+}
+
+.axe{
+  width: 500px;
   background-color: transparent;
 }
